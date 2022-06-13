@@ -1,7 +1,3 @@
-/**
- * Base test class implementation.
- * Author: Jony, Date: September 12, 2018
- */
 
 package main.java.testcases;
 
@@ -32,12 +28,12 @@ public class BaseTest {
         String environment = System.getProperty("executionEnvironment");
         ApplicationSettings.setUp(os, browser, environment);
 
-        // The below statement will work when test suite will be executed with mvn build command
+        // Comment out below line when running dynamic environments
 //        ApplicationSettings.setUp(os, browser, environment);
         System.out.println("Operating System: " + os);
         System.out.println("Browser: " + browser);
         System.out.println("Environment: " + environment);
-//
+
         Browser.launchBrowser();
         Browser.goToUrl(ApplicationSettings.getUrl());
 
@@ -49,7 +45,7 @@ public class BaseTest {
      */
     @BeforeMethod
     public void startTest(){
-        // TO Do: this method is not tested. It has to be tested thoroughly before final integration to the report.
+
     	ExtentReport.setTestStartTime();
 
     }
@@ -81,8 +77,6 @@ public class BaseTest {
      */
     @AfterSuite(alwaysRun = true)
     public void tearDown() {
-        //DashboardPage dashboardPage = PagesFactory.getDashboardPage();
-        //dashboardPage.signOut();
         Browser.closeFocusedScreen();
     	System.out.println("Starting quitting the browser.");
     	Browser.quitBrowser();

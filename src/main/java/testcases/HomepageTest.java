@@ -1,5 +1,4 @@
 package main.java.testcases;
-import main.java.testdataprovider.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobjects.HomePage;
@@ -14,8 +13,8 @@ public class HomepageTest extends BaseTest {
         try {
             initializeTest("Homepage loading test", "This test verifies that the homepage is loaded successfully", "Integration Testing");
 
-            HomePage homepage = PagesFactory.getHomePage();
-            boolean result = homepage.checkHomePageLoaded();
+            homePage = PagesFactory.getHomePage();
+            boolean result = homePage.checkHomePageLoaded();
             Assert.assertTrue(result, "Homepage is not loaded successfully");
         }
         catch (Exception e) {

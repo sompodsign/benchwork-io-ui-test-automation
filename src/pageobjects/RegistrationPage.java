@@ -70,7 +70,10 @@ public class RegistrationPage extends Base {
         this.driverWaits = PagesFactory.getDriverWaitsObject();
     }
 
-    // counter reader
+    /**
+     * This method reads the counter from properties file and returns the value
+     * @return
+     */
     public int readCounter() {
         try {
             InputStream input = new FileInputStream("src/testdata/aliasCounter.properties");
@@ -83,6 +86,9 @@ public class RegistrationPage extends Base {
         return 0;
     }
 
+    /**
+     * This method is used to write counter on properties file
+     */
     public void writeCounter(int count) {
 
         try {
@@ -95,6 +101,10 @@ public class RegistrationPage extends Base {
         }
     }
 
+    /**
+     * this method is used to create email with unique alias
+     * @return email with unique alias
+     */
     public String generateAliasGmail() throws IOException {
         writeCounter(readCounter());
         return "hello.neuraledge" + readCounter() + "@gmail.com";
