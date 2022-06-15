@@ -24,4 +24,4 @@ Project has been implemented to work with serveral browser set up by <browser> p
 + Firefox
 + IE
 
-_Please note that WebDriver for Chrome and Firefox expects that software is already installed on machine. So If You don't have installed Chrome or/and Firefox install it in default directory._
+_Please note that WebDriver for Chrome and Firefox expects that software is already installed on machine. So If You don't have installed Chrome or/and Firefox install it in default directory..
