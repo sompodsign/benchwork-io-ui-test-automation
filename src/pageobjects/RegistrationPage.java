@@ -3,6 +3,7 @@ package pageobjects;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.util.List;
+import java.util.Objects;
 import java.util.Properties;
 
 import applicationsettings.ApplicationSettings;
@@ -61,6 +62,9 @@ public class RegistrationPage extends Base {
     @FindBy(xpath = "//button[normalize-space()='Create Account']")
     WebElement createAccountButton;
 
+    @FindBy(xpath = "//h4[normalize-space()='Enterprise']")
+    WebElement enterPriceOption;
+
     // END: Registration page elements
 
 
@@ -115,9 +119,15 @@ public class RegistrationPage extends Base {
      * This method is used to register a new user
      * @return boolean
      */
-    public boolean registerAsAgency() {
+    public boolean registerAsAgency(String registerAs) {
         try {
             int step = 0;
+
+            if (Objects.equals(registerAs, "agency")) {
+                driverActions.clearSession();
+                driverActions.refreshPage();
+                driver.get(ApplicationSettings.getUrl());
+            }
 
             driverActions.clickOnWebElementWithActionsClass(registerButton);
             step++;
@@ -131,9 +141,15 @@ public class RegistrationPage extends Base {
             step++;
             System.out.println("Step " + step + ": Enter random full name");
 
-            driverActions.clickOnWebElementWithActionsClass(agencyOption);
-            step++;
-            System.out.println("Step " + step + ": Click on Agency option");
+            if (Objects.equals(registerAs, "agency")) {
+                driverActions.clickOnWebElementWithActionsClass(agencyOption);
+                step++;
+                System.out.println("Step " + step + ": Click on agency option");
+            } else {
+                driverActions.clickOnWebElementWithActionsClass(enterPriceOption);
+                step++;
+                System.out.println("Step " + step + ": Click on enterprise option");
+            }
 
             driverActions.clickOnWebElementWithActionsClass(continueButton);
             step++;

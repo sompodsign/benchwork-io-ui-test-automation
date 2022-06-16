@@ -14,6 +14,7 @@
 
       <class name="main.java.testcases.RegistrationPageTest">
         <methods>
+          <include name="validateRegisterAsEnterPriseFunctionality"/>
             <include name="validateRegisterAsAgencyFunctionality"/>
         </methods>
       </class>
