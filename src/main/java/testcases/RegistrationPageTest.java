@@ -48,4 +48,29 @@ public class RegistrationPageTest extends BaseTest {
             System.out.println(ex);
         }
     }
+
+    @Test(priority = 2)
+    public void validateUserNotAbleToSubmitRegistrationFormWithOutOrganizationName() {
+
+        try {
+
+            initializeTest("Validate Registration Functionality without org name", "This" +
+                            " test will verify" +
+                            " that user is not able to register without organization name and " +
+                            "shows an error message",
+                    "Integration Testing");
+
+            registrationPage = PagesFactory.getRegistrationPage();
+
+            System.out.println("\nStarting register into the site.\\n");
+
+            boolean result = registrationPage.checkFormNotSubmitWithoutOrganization("agency");
+            Assert.assertTrue(result, "No error message shown for organization field");
+
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+    }
+
+
 }

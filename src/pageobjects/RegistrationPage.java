@@ -62,6 +62,9 @@ public class RegistrationPage extends Base {
     @FindBy(xpath = "//h4[normalize-space()='Enterprise']")
     WebElement enterPriceOption;
 
+    @FindBy(xpath = "//span[.='Please enter Organization name']")
+    WebElement organizationErrorMessage;
+
     // END: Registration page elements
 
 
@@ -184,5 +187,73 @@ public class RegistrationPage extends Base {
             return false;
         }
     }
+
+    public boolean checkFormNotSubmitWithoutOrganization(String registerAs) {
+        try {
+            int step = 0;
+
+            if (Objects.equals(registerAs, "agency")) {
+                driverActions.clearSession();
+                driverActions.refreshPage();
+                driver.get(ApplicationSettings.getUrl());
+            }
+
+            driverActions.clickOnWebElementWithActionsClass(registerButton);
+            step++;
+            System.out.println("Step " + step + ": Click on Register Now button");
+
+            Assert.assertTrue(driverWaits.waitUntilVisible(20, createAccountHeader), "Create Account header is not visible");
+            step++;
+            System.out.println("Step " + step + ": Verify that Create Account header is visible");
+
+            if (Objects.equals(registerAs, "agency")) {
+                driverActions.clickOnWebElementWithActionsClass(agencyOption);
+                step++;
+                System.out.println("Step " + step + ": Click on agency option");
+            } else {
+                driverActions.clickOnWebElementWithActionsClass(enterPriceOption);
+                step++;
+                System.out.println("Step " + step + ": Click on enterprise option");
+            }
+
+            driverActions.clickOnWebElementWithActionsClass(continueButton);
+            step++;
+            System.out.println("Step " + step + ": Click on Continue button");
+
+            driverActions.typeText(firstNameInput, TestData.getRandomFirstName());
+            step++;
+            System.out.println("Step " + step + ": Enter random first name");
+
+            driverActions.typeText(lastNameInput, TestData.getRandomLastName());
+            step++;
+            System.out.println("Step " + step + ": Enter random last name");
+
+            driverActions.typeText(emailInput, generateAliasGmail());
+            step++;
+            System.out.println("Step " + step + ": Enter email");
+
+            driverActions.typeText(passwordInput, "5946644Ss@");
+            step++;
+            System.out.println("Step " + step + ": Enter password");
+
+            driverActions.typeText(confirmPasswordInput, "5946644Ss@");
+            step++;
+            System.out.println("Step " + step + ": Enter confirm password");
+
+            driverActions.clickOnWebElementWithActionsClass(createAccountButton);
+            driverWaits.waitOneSeconds();
+            driverActions.clickOnWebElementWithActionsClass(createAccountButton);
+            step++;
+            System.out.println("Step " + step + ": Click on Create Account button");
+
+            return driverWaits.waitUntilVisible(20, organizationErrorMessage);
+
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 
 }
