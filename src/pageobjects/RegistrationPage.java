@@ -1,13 +1,10 @@
 package pageobjects;
 
 import java.io.*;
-import java.nio.charset.Charset;
-import java.util.List;
 import java.util.Objects;
 import java.util.Properties;
 
 import applicationsettings.ApplicationSettings;
-import helper.GmailInbox;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
