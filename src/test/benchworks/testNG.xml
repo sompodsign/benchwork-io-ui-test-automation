@@ -6,7 +6,6 @@
     <classes>
 
       <class name="main.java.testcases.HomepageTest">
-
         <methods>
           <include name="validateHomePageLoadSuccessfully"/>
         </methods>
@@ -14,9 +13,18 @@
 
       <class name="main.java.testcases.RegistrationPageTest">
         <methods>
-<!--          <include name="validateRegisterAsEnterPriseFunctionality"/>-->
-<!--          <include name="validateRegisterAsAgencyFunctionality"/>-->
-          <include name="validateUserNotAbleToSubmitRegistrationFormWithOutOrganizationName"/>
+          <include name="testRegistrationPageLoaded"/>
+          <include name="validateRegisterAsEnterPriseFunctionality"/>
+          <include name="validateRegisterAsAgencyFunctionality"/>
+          <include name="validateUserNotAbleToSubmitAnEmptyForm"/>
+          <include name="validateUserNotAbleToSubmitWithoutOrganizationTypeSelected"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutFirstName"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutLastName"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutEmail"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutPassword"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutConfirmPassword"/>
+          <include name="validateUserNotAbleToRegisterWithInvalidEmail"/>
+          <include name="validateUserNotAbleToRegisterWithPasswordMismatch"/>
         </methods>
       </class>
 
