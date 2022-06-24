@@ -31,5 +31,7 @@ public final class PagesFactory {
 
     public static RegistrationPage getRegistrationPage() {return GetPage(RegistrationPage.class);}
 
+    public static LoginPage getLoginPage() {return GetPage(LoginPage.class);}
+
 
 }

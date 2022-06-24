@@ -14,20 +14,31 @@
       <class name="main.java.testcases.RegistrationPageTest">
         <methods>
           <include name="testRegistrationPageLoaded"/>
-          <include name="validateRegisterAsEnterPriseFunctionality"/>
-          <include name="validateRegisterAsAgencyFunctionality"/>
-          <include name="validateUserNotAbleToSubmitAnEmptyForm"/>
-          <include name="validateUserNotAbleToSubmitWithoutOrganizationTypeSelected"/>
-          <include name="validateUserNotAbleToSubmitFormWithoutFirstName"/>
-          <include name="validateUserNotAbleToSubmitFormWithoutLastName"/>
-          <include name="validateUserNotAbleToSubmitFormWithoutEmail"/>
-          <include name="validateUserNotAbleToSubmitFormWithoutPassword"/>
-          <include name="validateUserNotAbleToSubmitFormWithoutConfirmPassword"/>
-          <include name="validateUserNotAbleToRegisterWithInvalidEmail"/>
-          <include name="validateUserNotAbleToRegisterWithPasswordMismatch"/>
+<!--          <include name="validateRegisterAsEnterPriseFunctionality"/>-->
+<!--          <include name="validateRegisterAsAgencyFunctionality"/>-->
+<!--          <include name="validateUserNotAbleToSubmitAnEmptyForm"/>-->
+<!--          <include name="validateUserNotAbleToSubmitWithoutOrganizationTypeSelected"/>-->
+<!--          <include name="validateUserNotAbleToSubmitFormWithoutFirstName"/>-->
+<!--          <include name="validateUserNotAbleToSubmitFormWithoutLastName"/>-->
+<!--          <include name="validateUserNotAbleToSubmitFormWithoutEmail"/>-->
+<!--          <include name="validateUserNotAbleToSubmitFormWithoutPassword"/>-->
+<!--          <include name="validateUserNotAbleToSubmitFormWithoutConfirmPassword"/>-->
+<!--          <include name="validateUserNotAbleToRegisterWithInvalidEmail"/>-->
+<!--          <include name="validateUserNotAbleToRegisterWithPasswordMismatch"/>-->
         </methods>
       </class>
 
+      <class name="main.java.testcases.LoginPageTest">
+        <methods>
+          <include name="testLoginPageLoaded"/>
+          <include name="validateUserNotAbleToSubmitAnEmptyLoginForm"/>
+          <include name="validateUserNotAbleToLoginWithOutEnteringAnEmail"/>
+          <include name="validateUserNotAbleToLoginWithWrongEmail"/>
+          <include name="validateLoginFunctionality"/>
+        </methods>
+      </class>
+
+      <class name="main.java.testcases.LogoutTest"/>
 
     </classes>
   </test>
