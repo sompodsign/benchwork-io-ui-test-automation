@@ -33,5 +33,7 @@ public final class PagesFactory {
 
     public static LoginPage getLoginPage() {return GetPage(LoginPage.class);}
 
+    public static DashboardPage getDashboardPage() {return GetPage(DashboardPage.class);}
+
 
 }

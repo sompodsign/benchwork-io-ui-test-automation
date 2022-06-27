@@ -1,25 +1,51 @@
 package main.java.testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageobjects.HomePage;
+import pageobjects.DashboardPage;
 import pages.PagesFactory;
 
 
 public class DashboardPageTest extends BaseTest {
-    HomePage homePage;
+    DashboardPage dashboard;
 
     @Test(priority = 1)
-    public void validateHomePageLoadSuccessfully() {
+    public void validateDashboardPageLoadSuccessfully() {
         try {
-            initializeTest("Homepage loading test", "This test verifies that the homepage is loaded successfully", "Integration Testing");
+            initializeTest("Dashboard loading test", "This test verifies that the Dashboard is loaded successfully", "Integration Testing");
 
-            homePage = PagesFactory.getHomePage();
-            boolean result = homePage.checkHomePageLoaded();
-            Assert.assertTrue(result, "Homepage is not loaded successfully");
-        }
-        catch (Exception e) {
+            dashboard = PagesFactory.getDashboardPage();
+            boolean result = dashboard.checkDashboardPageLoaded();
+            Assert.assertTrue(result, "Dashboard is not loaded successfully");
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+    @Test(priority = 2)
+    public void validateTopCardsOnDashboard() {
+        try {
+            initializeTest("Top cards on Dashboard", "This test verifies that the top cards are displayed on Dashboard", "Integration Testing");
+
+            dashboard = PagesFactory.getDashboardPage();
+            boolean result = dashboard.checkTopCardsOnDashboard();
+            Assert.assertTrue(result, "Top cards are not displayed on Dashboard");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Test(priority = 3)
+    public void validateLanguageSummarySectionFunctionalities() {
+        try {
+            initializeTest("Language Summary Section Functionalities", "This test verifies that the Language Summary Section Functionalities are working", "Integration Testing");
+
+            dashboard = PagesFactory.getDashboardPage();
+            boolean result = dashboard.checkLanguageSummarySectionFunctionalities();
+            Assert.assertTrue(result, "Language Summary Section Functionalities are not working");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }

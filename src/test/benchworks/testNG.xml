@@ -31,10 +31,17 @@
       <class name="main.java.testcases.LoginPageTest">
         <methods>
           <include name="testLoginPageLoaded"/>
-          <include name="validateUserNotAbleToSubmitAnEmptyLoginForm"/>
+<!--          <include name="validateUserNotAbleToSubmitAnEmptyLoginForm"/>-->
 <!--          <include name="validateUserNotAbleToLoginWithOutEnteringAnEmail"/>-->
 <!--          <include name="validateUserNotAbleToLoginWithWrongEmail"/>-->
-<!--          <include name="validateLoginFunctionality"/>-->
+          <include name="validateLoginFunctionality"/>
+        </methods>
+      </class>
+
+      <class name="main.java.testcases.DashboardPageTest">
+        <methods>
+          <include name="validateDashboardPageLoadSuccessfully"/>
+          <include name="validateTopCardsOnDashboard"/>
         </methods>
       </class>
 
