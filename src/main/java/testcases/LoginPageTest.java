@@ -10,7 +10,7 @@ public class LoginPageTest extends BaseTest {
 
     LoginPage loginPage;
 
-    @Test(priority = 1)
+    @Test(priority = 0)
     public void testLoginPageLoaded() {
         try {
             initializeTest("test login page loaded", "Login page loaded",
@@ -29,7 +29,7 @@ public class LoginPageTest extends BaseTest {
 
     }
 
-    @Test(priority = 2, dependsOnMethods = "testLoginPageLoaded")
+    @Test(priority = 1, dependsOnMethods = "testLoginPageLoaded")
     public void validateUserNotAbleToSubmitAnEmptyLoginForm() {
         try {
             initializeTest(
@@ -47,7 +47,7 @@ public class LoginPageTest extends BaseTest {
         }
     }
 
-    @Test(priority = 3, dependsOnMethods = "testLoginPageLoaded")
+    @Test(priority = 2, dependsOnMethods = "testLoginPageLoaded")
     public void validateUserNotAbleToLoginWithOutEnteringAnEmail() {
         try {
             initializeTest(
@@ -84,7 +84,7 @@ public class LoginPageTest extends BaseTest {
     }
 
 
-        @Test(dataProvider = "credentials", dataProviderClass = TestDataProvider.class)
+        @Test(dataProvider = "credentials", dataProviderClass = TestDataProvider.class, priority = 5)
         public void validateLoginFunctionality(String email, String password) {
 
             try {

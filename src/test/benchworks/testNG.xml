@@ -11,9 +11,9 @@
         </methods>
       </class>
 
-      <class name="main.java.testcases.RegistrationPageTest">
-        <methods>
-          <include name="testRegistrationPageLoaded"/>
+<!--      <class name="main.java.testcases.RegistrationPageTest">-->
+<!--        <methods>-->
+<!--          <include name="testRegistrationPageLoaded"/>-->
 <!--          <include name="validateRegisterAsEnterPriseFunctionality"/>-->
 <!--          <include name="validateRegisterAsAgencyFunctionality"/>-->
 <!--          <include name="validateUserNotAbleToSubmitAnEmptyForm"/>-->
@@ -25,16 +25,16 @@
 <!--          <include name="validateUserNotAbleToSubmitFormWithoutConfirmPassword"/>-->
 <!--          <include name="validateUserNotAbleToRegisterWithInvalidEmail"/>-->
 <!--          <include name="validateUserNotAbleToRegisterWithPasswordMismatch"/>-->
-        </methods>
-      </class>
+<!--        </methods>-->
+<!--      </class>-->
 
       <class name="main.java.testcases.LoginPageTest">
         <methods>
           <include name="testLoginPageLoaded"/>
           <include name="validateUserNotAbleToSubmitAnEmptyLoginForm"/>
-          <include name="validateUserNotAbleToLoginWithOutEnteringAnEmail"/>
-          <include name="validateUserNotAbleToLoginWithWrongEmail"/>
-          <include name="validateLoginFunctionality"/>
+<!--          <include name="validateUserNotAbleToLoginWithOutEnteringAnEmail"/>-->
+<!--          <include name="validateUserNotAbleToLoginWithWrongEmail"/>-->
+<!--          <include name="validateLoginFunctionality"/>-->
         </methods>
       </class>
 

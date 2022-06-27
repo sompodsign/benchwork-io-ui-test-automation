@@ -89,6 +89,9 @@ public class RegistrationPage extends Base {
     @FindBy(xpath = "//span[contains(text(),'Invalid email')]")
     WebElement invalidEmailErrorMessage;
 
+    @FindBy(xpath = "//h5[normalize-space()='Welcome Back!']")
+    WebElement welcomeBackText;
+
     // END: Registration page elements
 
 
@@ -253,7 +256,7 @@ public class RegistrationPage extends Base {
             step++;
             System.out.println("Step " + step + ": Click on Create Account button");
 
-            return driver.getCurrentUrl().contains("/dashboard");
+            return driverWaits.waitUntilVisible(20, welcomeBackText);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -516,6 +519,11 @@ public class RegistrationPage extends Base {
             typeConfirmPassword();
             step++;
             System.out.println("Step " + step + ": Enter confirm password");
+
+            clickOnCreateAccountButton();
+            step++;
+            System.out.println("Step " + step + ": Click on Create Account button");
+
 
             clickOnCreateAccountButton();
             step++;

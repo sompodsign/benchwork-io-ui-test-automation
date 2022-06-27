@@ -92,15 +92,11 @@ public class LoginPage extends Base {
                 step++;
                 System.out.println("Step " + step + ": Click on login button");
 
-                Assert.assertTrue(driverWaits.waitUntilVisible(50, emailErrorMessage));
+                driverActions.clickOnWebElementWithActionsClass(loginButton);
                 step++;
-                System.out.println("Step " + step + ": Email error message visible");
+                System.out.println("Step " + step + ": Click on login button");
 
-                Assert.assertTrue(driverWaits.waitUntilVisible(50, passwordErrorMessage));
-                step++;
-                System.out.println("Step " + step + ": Password error message visible");
-
-                return true;
+                return driverWaits.waitUntilVisible(50, emailErrorMessage);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -156,6 +152,7 @@ public class LoginPage extends Base {
     }
 
     public boolean login(String email, String password) {
+        System.out.println("Login with email: " + email + " and password: " + password);
         try {
             int step = 0;
 
