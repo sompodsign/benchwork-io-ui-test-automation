@@ -62,7 +62,6 @@
 
 <!--        </methods>-->
 <!--      </class>-->
-
       <class name="main.java.testcases.TechnicalTeamPageTest">
         <methods>
           <include name="validateTeamPageLoadSuccessfully"/>
