@@ -22,7 +22,8 @@ public class TestData {
     }
 
     public static String getRandomWord() {
-        return getRandomParagraph().split(" ")[(int) (Math.random() * getRandomParagraph().split(" ").length)];
+        String str = getRandomParagraph().replaceAll("[^a-zA-Z0-9]"," ");
+        return str.split("")[(int) (Math.random() * getRandomParagraph().split(" ").length)];
     }
 
     public static String getRandomNumber() {
