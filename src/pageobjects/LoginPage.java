@@ -173,6 +173,7 @@ public class LoginPage extends Base {
             step++;
             System.out.println("Step " + step + ": Click on login button");
 
+            driverWaits.waitOneSeconds();
             return driver.getCurrentUrl().contains("dashboard");
 
         } catch (Exception e) {

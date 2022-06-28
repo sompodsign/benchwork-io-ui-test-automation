@@ -28,6 +28,7 @@ public class LogoutTest extends BaseTest {
             System.out.println("Checking if logout");
 
             driverActions = PagesFactory.getDriverActionsObject();
+            Thread.sleep(1000);
             driverActions.clickOnWebElementWithActionsClass(profileIcon);
             System.out.println("Clicked on profile icon");
 

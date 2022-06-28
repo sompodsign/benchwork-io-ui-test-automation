@@ -43,6 +43,19 @@
           <include name="validateDashboardPageLoadSuccessfully"/>
           <include name="validateTopCardsOnDashboard"/>
           <include name="checkLanguageSummarySectionFunctionalities"/>
+          <include name="validateRecentConsultantsSection"/>
+          <include name="validateRecentConsultantsSectionTable"/>
+          <include name="validateEditButtonFunctionalityForARow"/>
+          <include name="validateRecentWorkLogsTable"/>
+          <include name="validateSeeAllButtonFunctionalityOfRecentWorkLogsSection"/>
+          <include name="validateRecentConsultantSectionFilterFunctionality"/>
+        </methods>
+      </class>
+
+      <class name="main.java.testcases.TeamPageTest">
+        <methods>
+          <include name="validateTeamPageLoadSuccessfully"/>
+
         </methods>
       </class>
 
