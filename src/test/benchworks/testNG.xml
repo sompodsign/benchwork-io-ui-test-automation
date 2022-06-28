@@ -42,6 +42,7 @@
         <methods>
           <include name="validateDashboardPageLoadSuccessfully"/>
           <include name="validateTopCardsOnDashboard"/>
+          <include name="checkLanguageSummarySectionFunctionalities"/>
         </methods>
       </class>
 
