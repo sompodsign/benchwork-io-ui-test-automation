@@ -39,5 +39,7 @@ public final class PagesFactory {
 
     public static TechnicalManagerPage getTechnicalTeamPage() {return GetPage(TechnicalManagerPage.class);}
 
+    public static ProjectPage getProjectPage() {return GetPage(ProjectPage.class);}
+
 
 }
