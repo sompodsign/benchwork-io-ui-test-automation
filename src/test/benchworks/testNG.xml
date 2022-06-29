@@ -71,6 +71,22 @@
 <!--        </methods>-->
 <!--      </class>-->
 
+      <class name="main.java.testcases.ProjectPageTest">
+        <methods>
+          <include name="validateProjectPageLoadSuccessfully"/>
+          <include name="validateTableMessage"/>
+          <include name="validateShowTableButtonFunctionality"/>
+          <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>
+          <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>
+          <include name="validateContextMenuButtonWorkingForTableRows"/>
+          <include name="validateAllTableColumnsAreVisible"/>
+          <include name="validateAddProjectButtonFunctionality"/>
+          <include name="validateCancelButtonFunctionalityOnAddProjectPage"/>
+          <include name="validateAddProjectFormGetsFillUpCorrectly"/>
+
+        </methods>
+      </class>
+
 
 
       <class name="main.java.testcases.LogoutTest"/>

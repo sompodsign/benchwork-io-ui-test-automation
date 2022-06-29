@@ -2,6 +2,7 @@ package pageobjects;
 
 import helper.DriverActions;
 import helper.DriverWaits;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -68,6 +69,9 @@ public class ProjectPage extends Base {
 
     @FindBy(xpath = "//*[.='Click the button to see table']")
     WebElement tableMessage;
+
+    @FindBy(xpath = "//*[.='Client 1']")
+    WebElement client1;
 
 
 
@@ -181,6 +185,72 @@ public class ProjectPage extends Base {
                         driverWaits.waitUntilVisible(10, clientNameColumn) &&
                         driverWaits.waitUntilVisible(10, descriptionColumn) &&
                         driverWaits.waitUntilVisible(10, statusColumn);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        public boolean checkAddProjectButtonFunctionality() {
+            try {
+                int step = 0;
+
+                driverActions.refreshPage();
+                step++;
+                System.out.println("Step " + step + ": Refresh page");
+
+                driverActions.clickOnWebElementWithActionsClass(addProjectButton);
+                step++;
+                System.out.println("Step " + step + ": Click on Add Project button");
+
+                return driverWaits.waitUntilVisible(10, addProjectDialogTitle);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        public boolean checkCancelButtonFunctionalityOnAddProjectPage() {
+            try {
+                int step = 0;
+
+                driverActions.clickOnWebElementWithActionsClass(cancelButton);
+                step++;
+                System.out.println("Step " + step + ": Click on Cancel button");
+
+                return driverActions.waitUntilInvisibilityOfElement(addProjectDialogTitle);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        public boolean checkAddProjectFormGetsFillUpCorrectly() {
+            try {
+                int step = 0;
+
+                driverActions.clickOnWebElementWithActionsClass(addProjectButton);
+                step++;
+                System.out.println("Step " + step + ": Click on Add Project button");
+
+                driverActions.clickOnWebElementWithActionsClass(clientNameDropdown);
+                step++;
+                System.out.println("Step " + step + ": Click on Client Name dropdown");
+
+                driverActions.clickOnWebElementWithActionsClass(client1);
+                step++;
+                System.out.println("Step " + step + ": Click on Client 1");
+
+                driverActions.typeText(projectNameField, "Test Project");
+                step++;
+                System.out.println("Step " + step + ": Enter Project Name");
+
+                driverActions.typeText(descriptionField, "Test Description");
+                step++;
+                System.out.println("Step " + step + ": Enter Description");
+
+                driverActions.clickOnWebElementWithActionsClass(saveButton);
+                step++;
+                System.out.println("Step " + step + ": Click on Save button");
+
+                return driverActions.waitUntilInvisibilityOfElement(addProjectDialogTitle);
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

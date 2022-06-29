@@ -112,6 +112,52 @@ public class ProjectPageTest extends BaseTest {
             Assert.assertTrue(result, "All table columns are not visible");
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    @Test(priority = 8)
+    public void validateAddProjectFunctionality() {
+        try {
+            initializeTest("Add Project Button Functionality",
+                    "This test verifies that the Add Project Button Functionality is working",
+                    "Integration Testing");
+
+            projectPage = PagesFactory.getProjectPage();
+            boolean result = projectPage.checkAddProjectButtonFunctionality();
+            Assert.assertTrue(result, "Add Project Button Functionality is not working");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(priority = 9)
+    public void validateCancelButtonFunctionalityOnAddProjectPage() {
+        try {
+            initializeTest("Cancel Button Functionality on Add Project Page",
+                    "This test verifies that the Cancel Button Functionality on Add Project Page is working",
+                    "Integration Testing");
+
+            projectPage = PagesFactory.getProjectPage();
+            boolean result = projectPage.checkCancelButtonFunctionalityOnAddProjectPage();
+            Assert.assertTrue(result, "Cancel Button Functionality on Add Project Page is not working");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test(priority = 10)
+    public void validateAddProjectFormGetsFillUpCorrectly() {
+        try {
+            initializeTest("Add Project Form gets fill up correctly",
+                    "This test verifies that the Add Project Form gets fill up correctly",
+                    "Integration Testing");
+
+            projectPage = PagesFactory.getProjectPage();
+            boolean result = projectPage.checkAddProjectFormGetsFillUpCorrectly();
+            Assert.assertTrue(result, "Add Project Form gets fill up correctly");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
