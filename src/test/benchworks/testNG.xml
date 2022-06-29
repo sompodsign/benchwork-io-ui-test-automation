@@ -62,14 +62,16 @@
 
 <!--        </methods>-->
 <!--      </class>-->
-      <class name="main.java.testcases.TechnicalTeamPageTest">
-        <methods>
-          <include name="validateTeamPageLoadSuccessfully"/>
-            <include name="validateInviteTeamButtonFunctionality"/>
-            <include name="validateUserCantSubmitEmptyInvitation"/>
-            <include name="validateInvitationSendFunctionality"/>
-        </methods>
-      </class>
+<!--      <class name="main.java.testcases.TechnicalTeamPageTest">-->
+<!--        <methods>-->
+<!--          <include name="validateTeamPageLoadSuccessfully"/>-->
+<!--            <include name="validateInviteTeamButtonFunctionality"/>-->
+<!--            <include name="validateUserCantSubmitEmptyInvitation"/>-->
+<!--            <include name="validateInvitationSendFunctionality"/>-->
+<!--        </methods>-->
+<!--      </class>-->
+
+
 
       <class name="main.java.testcases.LogoutTest"/>
 
