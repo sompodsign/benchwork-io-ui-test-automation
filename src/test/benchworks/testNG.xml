@@ -89,8 +89,9 @@
       </class>
 
 
-
+          <class name="main.java.testcases.CookiesTest"/>
 <!--      <class name="main.java.testcases.LogoutTest"/>-->
+
 
     </classes>
   </test>
