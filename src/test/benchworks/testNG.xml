@@ -62,6 +62,7 @@
 
         </methods>
       </class>
+
       <class name="main.java.testcases.TechnicalTeamPageTest">
         <methods>
           <include name="validateTeamPageLoadSuccessfully"/>
@@ -89,7 +90,7 @@
 
 
 
-      <class name="main.java.testcases.LogoutTest"/>
+<!--      <class name="main.java.testcases.LogoutTest"/>-->
 
     </classes>
   </test>

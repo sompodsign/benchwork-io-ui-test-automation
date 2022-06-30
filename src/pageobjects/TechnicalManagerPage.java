@@ -66,6 +66,7 @@ public class TechnicalManagerPage extends Base {
         try {
             int step = 0;
 
+            driverWaits.waitFiveSeconds();
             driverActions.clickOnWebElementWithActionsClass(inviteTechnicalManagerButton);
             Assert.assertTrue(driverWaits.waitUntilVisible(20, inviteTechnicalManagerModal),
                     "Invite Technical TechnicalTeam Manager Modal is not loaded successfully");

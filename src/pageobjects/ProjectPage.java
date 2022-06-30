@@ -112,6 +112,7 @@ public class ProjectPage extends Base {
     public boolean checkShowTableButtonFunctionality() {
         try {
             int step = 0;
+            driverWaits.waitFiveSeconds();
             driverActions.clickOnWebElementWithActionsClass(showTableButton);
             step++;
             System.out.println("Step " + step + ": Click on Show Table button");
