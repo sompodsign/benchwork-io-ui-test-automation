@@ -712,4 +712,13 @@ public class DriverActions {
         js.executeScript("window.sessionStorage.clear();");
     }
 
+    public void clearLocalStorage() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.localStorage.clear();");
+    }
+
+    public void clearCookies() {
+        driver.manage().deleteAllCookies();
+    }
+
 }
