@@ -2,6 +2,7 @@ package pageobjects;
 
 import helper.DriverActions;
 import helper.DriverWaits;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -97,19 +98,10 @@ public class TeamPage extends Base {
             System.out.println("Step " + step + ": Invite Team Business Manager Modal loaded successfully");
 
             driverActions.clickOnWebElementWithActionsClass(sendButton);
-            Assert.assertTrue(driverWaits.waitUntilVisible(20, inviteTeamBusinessManagerErrorMessage),
-                    "Invite Team Business Manager Error Message is not loaded successfully");
             step++;
-            System.out.println("Step " + step + ": Invite Team Business Manager Error Message loaded successfully");
+            System.out.println("Step " + step + ": clicked send button");
 
-            driverActions.clickOnWebElementWithActionsClass(backButton);
-            Assert.assertTrue(driverActions.waitUntilInvisibilityOfElement(inviteTeamBusinessManagerModal),
-                    "Invite Team Business Manager Modal is not closed successfully");
-
-            step++;
-            System.out.println("Step " + step + ": Invite Team Business Manager Modal closed successfully");
-
-            return true;
+            return driverActions.waitUntilInvisibilityOfElement(inviteTeamBusinessManagerModal);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -120,11 +112,12 @@ public class TeamPage extends Base {
         try {
             int step = 0;
 
-            driverActions.clickOnWebElementWithActionsClass(inviteTeamButton);
-            Assert.assertTrue(driverWaits.waitUntilVisible(20, inviteTeamBusinessManagerModal),
-                    "Invite Team Business Manager Modal is not loaded successfully");
-            step++;
-            System.out.println("Step " + step + ": Invite Team Business Manager Modal loaded successfully");
+//            driverWaits.waitFiveSeconds();
+//            driverActions.clickOnWebElementWithActionsClass(inviteTeamButton);
+//            Assert.assertTrue(driverWaits.waitUntilVisible(20, inviteTeamBusinessManagerModal),
+//                    "Invite Team Business Manager Modal is not loaded successfully");
+//            step++;
+//            System.out.println("Step " + step + ": Invite Team Business Manager Modal loaded successfully");
 
             driverActions.typeText(emailField, TestData.getRandomEmail());
             driverActions.clickOnWebElementWithActionsClass(sendButton);

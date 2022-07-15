@@ -22,7 +22,7 @@ public class TechnicalManagerPage extends Base {
     @FindBy(xpath = "//h4[normalize-space()='Technical Manager']")
     WebElement technicalManagerHeader;
 
-    @FindBy(xpath = "//button[normalize-space()='Invite Technical Manager']")
+    @FindBy(xpath = "//button[normalize-space()='Invite Client Technical Manager']")
     WebElement inviteTechnicalManagerButton;
 
     @FindBy(xpath = "//*[.='Invite Client Technical Manager']")

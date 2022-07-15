@@ -48,7 +48,7 @@ public class TeamPageTest extends BaseTest {
 
             teampage = PagesFactory.getTeamPage();
             boolean result = teampage.checkUserCantSubmitEmptyInvitation();
-            Assert.assertTrue(result, "User can submit empty invitation");
+            Assert.assertTrue(result, "User can't submit empty invitation");
         } catch (Exception e) {
             e.printStackTrace();
         }
