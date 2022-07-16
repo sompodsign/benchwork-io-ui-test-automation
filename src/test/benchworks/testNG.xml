@@ -95,12 +95,16 @@
             <include name="validateCancelButtonFunctionality"/>
             <include name="validateOsNameFieldOnTheModal"/>
             <include name="validateTypeFieldOnthePage"/>
-
+            <include name="validateUserCantSubmitEmtpyForm"/>
+            <include name="validateFormNotSubmitWithoutOsName"/>
+            <include name="validateFormNotSubmitWithoutVersion"/>
+            <include name="validateAddOsFunctionality"/>
+            <include name="validateSearchFieldIsPresent"/>
         </methods>
       </class>
 
 
-          <class name="main.java.testcases.CookiesTest"/>
+<!--          <class name="main.java.testcases.CookiesTest"/>-->
 <!--      <class name="main.java.testcases.LogoutTest"/>-->
 
 

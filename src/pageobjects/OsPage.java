@@ -40,6 +40,9 @@ public class OsPage extends Base {
     @FindBy(xpath = "//button[normalize-space()='Save']")
     WebElement saveButton;
 
+    @FindBy(xpath = "//input[@placeholder='Search by name']")
+    WebElement searchField;
+
     //
 
 
@@ -118,6 +121,98 @@ public class OsPage extends Base {
             int step = 0;
 
             return driverWaits.waitUntilVisible(50, osVersionField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean checkUserCantSubmitEmtpyForm() {
+        try {
+            int step = 0;
+
+            driverActions.clickOnWebElementWithActionsClass(saveButton);
+            step++;
+            System.out.println(step + " Click save button");
+
+            driverWaits.waitFiveSeconds();
+            return driverWaits.waitUntilVisible(50, osNameField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean checkFormNotSubmitWithoutOsName() {
+        try {
+            int step = 0;
+
+            driverActions.typeText(osVersionField, "11");
+            step++;
+            System.out.println(step + " Type version");
+
+            driverActions.clickOnWebElementWithActionsClass(saveButton);
+            step++;
+            System.out.println(step + " Click save button");
+
+            driverWaits.waitFiveSeconds();
+            return driverWaits.waitUntilVisible(50, osNameField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean checkFormNotSubmitWithoutVersion() {
+        try {
+            int step = 0;
+
+            driverActions.typeText(osVersionField, "");
+
+            driverActions.typeText(osNameField, "Windows");
+            step++;
+            System.out.println(step + " Type name");
+
+            driverActions.clickOnWebElementWithActionsClass(saveButton);
+            step++;
+            System.out.println(step + " Click save button");
+
+            driverWaits.waitFiveSeconds();
+            return driverWaits.waitUntilVisible(50, osVersionField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean checkAddOsFunctionality() {
+        try {
+            int step = 0;
+
+            driverActions.typeText(osNameField, TestData.getRandomFirstName());
+            step++;
+            System.out.println(step + " Type name");
+
+            driverActions.typeText(osVersionField, TestData.getRandomNumber());
+            step++;
+            System.out.println(step + " Type version");
+
+            driverActions.clickOnWebElementWithActionsClass(saveButton);
+            step++;
+            System.out.println(step + " Click save button");
+
+            return driverActions.waitUntilInvisibilityOfElement(osNameField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean checkSearchFieldIsPresent() {
+        try {
+            int step = 0;
+
+            return driverWaits.waitUntilVisible(50, searchField);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
