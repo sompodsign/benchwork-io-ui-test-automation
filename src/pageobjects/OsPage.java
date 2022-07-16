@@ -65,5 +65,62 @@ public class OsPage extends Base {
         }
     }
 
+    public boolean checkAddOsButtonFunctionality() {
+        try {
+            int step = 0;
 
+            driverActions.clickOnWebElementWithActionsClass(addOsButton);
+            step++;
+            System.out.println(step + " Click add os button");
+
+            return driverWaits.waitUntilVisible(50, osNameField);
+
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public boolean checkCancelButtonFunctionality() {
+        try {
+            int step = 0;
+
+            driverActions.clickOnWebElementWithActionsClass(cancelButton);
+            step++;
+            System.out.println(step + " Click cancel button");
+
+            return driverActions.waitUntilInvisibilityOfElement(osNameField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean checkOsNameFieldOnTheModal() {
+        try {
+            int step = 0;
+
+            driverActions.clickOnWebElementWithActionsClass(addOsButton);
+            step++;
+            System.out.println(step + " Click add os button");
+
+            return driverWaits.waitUntilVisible(50, osNameField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean checkTypeFieldOnthePage() {
+        try {
+            int step = 0;
+
+            return driverWaits.waitUntilVisible(50, osVersionField);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

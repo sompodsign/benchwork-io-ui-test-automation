@@ -88,6 +88,17 @@
 <!--        </methods>-->
 <!--      </class>-->
 
+      <class name="main.java.testcases.OsPageTest">
+        <methods>
+            <include name="validateOsPageLoaded"/>
+            <include name="validateAddOsButtonFunctionality"/>
+            <include name="validateCancelButtonFunctionality"/>
+            <include name="validateOsNameFieldOnTheModal"/>
+            <include name="validateTypeFieldOnthePage"/>
+
+        </methods>
+      </class>
+
 
           <class name="main.java.testcases.CookiesTest"/>
 <!--      <class name="main.java.testcases.LogoutTest"/>-->
