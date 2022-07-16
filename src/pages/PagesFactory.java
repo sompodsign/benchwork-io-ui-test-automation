@@ -43,5 +43,7 @@ public final class PagesFactory {
 
     public static OsPage getOsPage() {return GetPage(OsPage.class);}
 
+    public static ProfilePage getProfilePage() {return GetPage(ProfilePage.class);}
+
 
 }

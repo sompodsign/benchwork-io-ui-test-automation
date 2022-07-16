@@ -22,6 +22,7 @@ public class ApplicationSettings {
 	// Environment Details for Production
     private static final String productionUrl = "";
     private static final String devUrl = "http://dev.benchworks.io/";
+    public static final String profileUrl = "http://dev.benchworks.io/dashboard/my-profile";
     private static final String productionTestDataFilePath = ".//src//testdata//production_test_data.xls";
     private static final String devTestDataFilePath = ".//src//testdata//dev_test_data.xls";
 

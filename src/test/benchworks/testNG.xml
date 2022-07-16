@@ -88,18 +88,24 @@
 <!--        </methods>-->
 <!--      </class>-->
 
-      <class name="main.java.testcases.OsPageTest">
+<!--      <class name="main.java.testcases.OsPageTest">-->
+<!--        <methods>-->
+<!--            <include name="validateOsPageLoaded"/>-->
+<!--            <include name="validateAddOsButtonFunctionality"/>-->
+<!--            <include name="validateCancelButtonFunctionality"/>-->
+<!--            <include name="validateOsNameFieldOnTheModal"/>-->
+<!--            <include name="validateTypeFieldOnthePage"/>-->
+<!--            <include name="validateUserCantSubmitEmtpyForm"/>-->
+<!--            <include name="validateFormNotSubmitWithoutOsName"/>-->
+<!--            <include name="validateFormNotSubmitWithoutVersion"/>-->
+<!--            <include name="validateAddOsFunctionality"/>-->
+<!--            <include name="validateSearchFieldIsPresent"/>-->
+<!--        </methods>-->
+<!--      </class>-->
+
+      <class name="main.java.testcases.ProfilePageTest">
         <methods>
-            <include name="validateOsPageLoaded"/>
-            <include name="validateAddOsButtonFunctionality"/>
-            <include name="validateCancelButtonFunctionality"/>
-            <include name="validateOsNameFieldOnTheModal"/>
-            <include name="validateTypeFieldOnthePage"/>
-            <include name="validateUserCantSubmitEmtpyForm"/>
-            <include name="validateFormNotSubmitWithoutOsName"/>
-            <include name="validateFormNotSubmitWithoutVersion"/>
-            <include name="validateAddOsFunctionality"/>
-            <include name="validateSearchFieldIsPresent"/>
+          <include name="testProfilePageLoaded"/>
         </methods>
       </class>
 
