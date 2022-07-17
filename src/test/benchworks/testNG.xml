@@ -106,6 +106,11 @@
       <class name="main.java.testcases.ProfilePageTest">
         <methods>
           <include name="testProfilePageLoaded"/>
+          <include name="validateProfilePageHeader"/>
+          <include name="validateProfilePictureHeader"/>
+          <include name="validateNameFields"/>
+          <include name="validateTitleField"/>
+          <include name="validateEmailField"/>
         </methods>
       </class>
 

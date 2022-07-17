@@ -61,4 +61,54 @@ public class ProfilePage extends Base {
         }
     }
 
+    public boolean validateProfilePageHeader() {
+        try {
+            int step = 0;
+
+            return driverWaits.waitUntilVisible(50, myProfileHeader);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean validateProfilePictureHeader() {
+        try {
+            int step = 0;
+
+            return driverWaits.waitUntilVisible(50, profilePhotoHeader);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean validateNameFields() {
+        try {
+            int step = 0;
+
+            return driverWaits.waitUntilVisible(50, firstNameField) && driverWaits.waitUntilVisible(50, lastNameField);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean validateTitleField() {
+        try {
+            int step = 0;
+
+            return driverWaits.waitUntilVisible(50, titleField);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean validateEmailField() {
+        try {
+            int step = 0;
+
+            return driverWaits.waitUntilVisible(50, emailField);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }
