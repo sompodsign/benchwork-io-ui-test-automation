@@ -45,5 +45,9 @@ public final class PagesFactory {
 
     public static ProfilePage getProfilePage() {return GetPage(ProfilePage.class);}
 
+    public static ManageRequestsPage getManageRequestsPage() {return GetPage(ManageRequestsPage.class);}
+
+    public static ClientPage getClientPage() {return GetPage(ClientPage.class);}
+
 
 }

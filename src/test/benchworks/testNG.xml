@@ -72,6 +72,27 @@
 <!--        </methods>-->
 <!--      </class>-->
 
+<!--      <class name="main.java.testcases.ManageRequestsPageTest">-->
+<!--        <methods>-->
+<!--          <include name="validateManageRequestsPageLoadsSuccessfully"/>-->
+<!--          <include name="validateShowTableButtonIsVisible"/>-->
+<!--          <include name="validateShowTableButtonFunctionality"/>-->
+<!--          <include name="validateShowTableButtonSecondClickFunctionality"/>-->
+<!--          <include name="validateTableIsVisibleAfterClickingShowTableButton"/>-->
+<!--        </methods>-->
+<!--      </class>-->
+
+      <class name="main.java.testcases.ClientPageTest">
+        <methods>
+          <include name="validateClientPageLoadsSuccessfully"/>
+          <include name="validateShowTableButtonTogglesTheTable"/>
+          <include name="validateSearchBox"/>
+          <include name="validateTableCloseFunctionality"/>
+          <include name="validateAddClientButtonFunctionality"/>
+          <include name="validateUserCanCloseTheModal"/>
+          <include name="validateUserCanTypeOnAddClientNameField"/>
+        </methods>
+      </class>
 <!--      <class name="main.java.testcases.ProjectPageTest">-->
 <!--        <methods>-->
 <!--          <include name="validateProjectPageLoadSuccessfully"/>-->
@@ -103,16 +124,16 @@
 <!--        </methods>-->
 <!--      </class>-->
 
-      <class name="main.java.testcases.ProfilePageTest">
-        <methods>
-          <include name="testProfilePageLoaded"/>
-          <include name="validateProfilePageHeader"/>
-          <include name="validateProfilePictureHeader"/>
-          <include name="validateNameFields"/>
-          <include name="validateTitleField"/>
-          <include name="validateEmailField"/>
-        </methods>
-      </class>
+<!--      <class name="main.java.testcases.ProfilePageTest">-->
+<!--        <methods>-->
+<!--          <include name="testProfilePageLoaded"/>-->
+<!--          <include name="validateProfilePageHeader"/>-->
+<!--          <include name="validateProfilePictureHeader"/>-->
+<!--          <include name="validateNameFields"/>-->
+<!--          <include name="validateTitleField"/>-->
+<!--          <include name="validateEmailField"/>-->
+<!--        </methods>-->
+<!--      </class>-->
 
 
 <!--          <class name="main.java.testcases.CookiesTest"/>-->
