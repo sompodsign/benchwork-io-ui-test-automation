@@ -49,5 +49,9 @@ public final class PagesFactory {
 
     public static ClientPage getClientPage() {return GetPage(ClientPage.class);}
 
+    public static ProductPage getProductPage() {return GetPage(ProductPage.class);}
+
+    public static SkillPage getSkillPage() {return GetPage(SkillPage.class);}
+
 
 }
