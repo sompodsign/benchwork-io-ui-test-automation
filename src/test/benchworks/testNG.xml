@@ -140,6 +140,22 @@
       <!--        </methods>-->
       <!--      </class>-->
 
+      <!--      <class name="main.java.testcases.SkillPageTest">-->
+      <!--        <methods>-->
+      <!--          <include name="validateSkillPageLoadSuccessfully"/>-->
+      <!--          <include name="validateTableMessage"/>-->
+      <!--          <include name="validateShowTableButtonFunctionality"/>-->
+      <!--          <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>-->
+      <!--          <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>-->
+      <!--          <include name="validateContextMenuButtonWorkingForTableRows"/>-->
+      <!--          <include name="validateAllTableColumnsAreVisible"/>-->
+      <!--          <include name="validateAddSkillButtonFunctionality"/>-->
+      <!--          <include name="validateCancelButtonFunctionalityOnAddSkillPage"/>-->
+      <!--          <include name="validateAddSkillFormGetsFillUpCorrectly"/>-->
+
+      <!--        </methods>-->
+      <!--      </class>-->
+
 <!--      <class name="main.java.testcases.ProfilePageTest">-->
 <!--        <methods>-->
 <!--          <include name="testProfilePageLoaded"/>-->
