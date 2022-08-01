@@ -11,76 +11,76 @@
         </methods>
       </class>
 
-<!--      <class name="main.java.testcases.RegistrationPageTest">-->
-<!--        <methods>-->
-<!--          <include name="testRegistrationPageLoaded"/>-->
-<!--          <include name="validateRegisterAsEnterPriseFunctionality"/>-->
-<!--          <include name="validateRegisterAsAgencyFunctionality"/>-->
-<!--          <include name="validateUserNotAbleToSubmitAnEmptyForm"/>-->
-<!--          <include name="validateUserNotAbleToSubmitWithoutOrganizationTypeSelected"/>-->
-<!--          <include name="validateUserNotAbleToSubmitFormWithoutFirstName"/>-->
-<!--          <include name="validateUserNotAbleToSubmitFormWithoutLastName"/>-->
-<!--          <include name="validateUserNotAbleToSubmitFormWithoutEmail"/>-->
-<!--          <include name="validateUserNotAbleToSubmitFormWithoutPassword"/>-->
-<!--          <include name="validateUserNotAbleToSubmitFormWithoutConfirmPassword"/>-->
-<!--          <include name="validateUserNotAbleToRegisterWithInvalidEmail"/>-->
-<!--          <include name="validateUserNotAbleToRegisterWithPasswordMismatch"/>-->
-<!--        </methods>-->
-<!--      </class>-->
+      <class name="main.java.testcases.RegistrationPageTest">
+        <methods>
+          <include name="testRegistrationPageLoaded"/>
+          <include name="validateRegisterAsEnterPriseFunctionality"/>
+          <include name="validateRegisterAsAgencyFunctionality"/>
+          <include name="validateUserNotAbleToSubmitAnEmptyForm"/>
+          <include name="validateUserNotAbleToSubmitWithoutOrganizationTypeSelected"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutFirstName"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutLastName"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutEmail"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutPassword"/>
+          <include name="validateUserNotAbleToSubmitFormWithoutConfirmPassword"/>
+          <include name="validateUserNotAbleToRegisterWithInvalidEmail"/>
+          <include name="validateUserNotAbleToRegisterWithPasswordMismatch"/>
+        </methods>
+      </class>
 
       <class name="main.java.testcases.LoginPageTest">
         <methods>
           <include name="testLoginPageLoaded"/>
-<!--          <include name="validateUserNotAbleToSubmitAnEmptyLoginForm"/>-->
-<!--          <include name="validateUserNotAbleToLoginWithOutEnteringAnEmail"/>-->
-<!--          <include name="validateUserNotAbleToLoginWithWrongEmail"/>-->
+          <include name="validateUserNotAbleToSubmitAnEmptyLoginForm"/>
+          <include name="validateUserNotAbleToLoginWithOutEnteringAnEmail"/>
+          <include name="validateUserNotAbleToLoginWithWrongEmail"/>
           <include name="validateLoginFunctionality"/>
         </methods>
       </class>
 
-<!--      <class name="main.java.testcases.DashboardPageTest">-->
-<!--        <methods>-->
-<!--          <include name="validateDashboardPageLoadSuccessfully"/>-->
-<!--          <include name="validateTopCardsOnDashboard"/>-->
-<!--          <include name="checkLanguageSummarySectionFunctionalities"/>-->
-<!--          <include name="validateRecentConsultantsSection"/>-->
-<!--          <include name="validateRecentConsultantsSectionTable"/>-->
-<!--          <include name="validateEditButtonFunctionalityForARow"/>-->
-<!--          <include name="validateRecentWorkLogsTable"/>-->
-<!--          <include name="validateSeeAllButtonFunctionalityOfRecentWorkLogsSection"/>-->
-<!--          <include name="validateRecentConsultantSectionFilterFunctionality"/>-->
-<!--        </methods>-->
-<!--      </class>-->
+      <class name="main.java.testcases.DashboardPageTest">
+        <methods>
+          <include name="validateDashboardPageLoadSuccessfully"/>
+          <include name="validateTopCardsOnDashboard"/>
+          <include name="checkLanguageSummarySectionFunctionalities"/>
+          <include name="validateRecentConsultantsSection"/>
+          <include name="validateRecentConsultantsSectionTable"/>
+          <include name="validateEditButtonFunctionalityForARow"/>
+          <include name="validateRecentWorkLogsTable"/>
+          <include name="validateSeeAllButtonFunctionalityOfRecentWorkLogsSection"/>
+          <include name="validateRecentConsultantSectionFilterFunctionality"/>
+        </methods>
+      </class>
 
-<!--      <class name="main.java.testcases.TeamPageTest">-->
+      <class name="main.java.testcases.TeamPageTest">
 
-<!--        <methods>-->
-<!--          <include name="validateTeamPageLoadSuccessfully"/>-->
-<!--          <include name="validateInviteTeamButtonFunctionality"/>-->
-<!--          <include name="validateUserCantSubmitEmptyInvitation"/>-->
-<!--          <include name="validateInvitationSendFunctionality"/>-->
+        <methods>
+          <include name="validateTeamPageLoadSuccessfully"/>
+          <include name="validateInviteTeamButtonFunctionality"/>
+          <include name="validateUserCantSubmitEmptyInvitation"/>
+          <include name="validateInvitationSendFunctionality"/>
 
-<!--        </methods>-->
-<!--      </class>-->
+        </methods>
+      </class>
 
-<!--      <class name="main.java.testcases.TechnicalTeamPageTest">-->
-<!--        <methods>-->
-<!--          <include name="validateTeamPageLoadSuccessfully"/>-->
-<!--            <include name="validateInviteTeamButtonFunctionality"/>-->
-<!--            <include name="validateUserCantSubmitEmptyInvitation"/>-->
-<!--            <include name="validateInvitationSendFunctionality"/>-->
-<!--        </methods>-->
-<!--      </class>-->
+      <class name="main.java.testcases.TechnicalTeamPageTest">
+        <methods>
+          <include name="validateTeamPageLoadSuccessfully"/>
+            <include name="validateInviteTeamButtonFunctionality"/>
+            <include name="validateUserCantSubmitEmptyInvitation"/>
+            <include name="validateInvitationSendFunctionality"/>
+        </methods>
+      </class>
 
-<!--      <class name="main.java.testcases.ManageRequestsPageTest">-->
-<!--        <methods>-->
-<!--          <include name="validateManageRequestsPageLoadsSuccessfully"/>-->
-<!--          <include name="validateShowTableButtonIsVisible"/>-->
-<!--          <include name="validateShowTableButtonFunctionality"/>-->
-<!--          <include name="validateShowTableButtonSecondClickFunctionality"/>-->
-<!--          <include name="validateTableIsVisibleAfterClickingShowTableButton"/>-->
-<!--        </methods>-->
-<!--      </class>-->
+      <class name="main.java.testcases.ManageRequestsPageTest">
+        <methods>
+          <include name="validateManageRequestsPageLoadsSuccessfully"/>
+          <include name="validateShowTableButtonIsVisible"/>
+          <include name="validateShowTableButtonFunctionality"/>
+          <include name="validateShowTableButtonSecondClickFunctionality"/>
+          <include name="validateTableIsVisibleAfterClickingShowTableButton"/>
+        </methods>
+      </class>
 
       <class name="main.java.testcases.ClientPageTest">
         <methods>
@@ -93,79 +93,79 @@
           <include name="validateUserCanTypeOnAddClientNameField"/>
         </methods>
       </class>
-<!--      <class name="main.java.testcases.ProjectPageTest">-->
-<!--        <methods>-->
-<!--          <include name="validateProjectPageLoadSuccessfully"/>-->
-<!--          <include name="validateTableMessage"/>-->
-<!--          <include name="validateShowTableButtonFunctionality"/>-->
-<!--          <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>-->
-<!--          <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>-->
-<!--          <include name="validateContextMenuButtonWorkingForTableRows"/>-->
-<!--          <include name="validateAllTableColumnsAreVisible"/>-->
-<!--          <include name="validateAddProjectButtonFunctionality"/>-->
-<!--          <include name="validateCancelButtonFunctionalityOnAddProjectPage"/>-->
-<!--          <include name="validateAddProjectFormGetsFillUpCorrectly"/>-->
+      <class name="main.java.testcases.ProjectPageTest">
+        <methods>
+          <include name="validateProjectPageLoadSuccessfully"/>
+          <include name="validateTableMessage"/>
+          <include name="validateShowTableButtonFunctionality"/>
+          <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>
+          <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>
+          <include name="validateContextMenuButtonWorkingForTableRows"/>
+          <include name="validateAllTableColumnsAreVisible"/>
+          <include name="validateAddProjectButtonFunctionality"/>
+          <include name="validateCancelButtonFunctionalityOnAddProjectPage"/>
+          <include name="validateAddProjectFormGetsFillUpCorrectly"/>
 
-<!--        </methods>-->
-<!--      </class>-->
+        </methods>
+      </class>
 
-<!--      <class name="main.java.testcases.OsPageTest">-->
-<!--        <methods>-->
-<!--            <include name="validateOsPageLoaded"/>-->
-<!--            <include name="validateAddOsButtonFunctionality"/>-->
-<!--            <include name="validateCancelButtonFunctionality"/>-->
-<!--            <include name="validateOsNameFieldOnTheModal"/>-->
-<!--            <include name="validateTypeFieldOnthePage"/>-->
-<!--            <include name="validateUserCantSubmitEmtpyForm"/>-->
-<!--            <include name="validateFormNotSubmitWithoutOsName"/>-->
-<!--            <include name="validateFormNotSubmitWithoutVersion"/>-->
-<!--            <include name="validateAddOsFunctionality"/>-->
-<!--            <include name="validateSearchFieldIsPresent"/>-->
-<!--        </methods>-->
-<!--      </class>-->
+      <class name="main.java.testcases.OsPageTest">
+        <methods>
+            <include name="validateOsPageLoaded"/>
+            <include name="validateAddOsButtonFunctionality"/>
+            <include name="validateCancelButtonFunctionality"/>
+            <include name="validateOsNameFieldOnTheModal"/>
+            <include name="validateTypeFieldOnthePage"/>
+            <include name="validateUserCantSubmitEmtpyForm"/>
+            <include name="validateFormNotSubmitWithoutOsName"/>
+            <include name="validateFormNotSubmitWithoutVersion"/>
+            <include name="validateAddOsFunctionality"/>
+            <include name="validateSearchFieldIsPresent"/>
+        </methods>
+      </class>
 
-      <!--      <class name="main.java.testcases.ProductPageTest">-->
-      <!--        <methods>-->
-      <!--          <include name="validateProductPageLoadSuccessfully"/>-->
-      <!--          <include name="validateTableMessage"/>-->
-      <!--          <include name="validateShowTableButtonFunctionality"/>-->
-      <!--          <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>-->
-      <!--          <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>-->
-      <!--          <include name="validateContextMenuButtonWorkingForTableRows"/>-->
-      <!--          <include name="validateAllTableColumnsAreVisible"/>-->
-      <!--          <include name="validateAddProductButtonFunctionality"/>-->
-      <!--          <include name="validateCancelButtonFunctionalityOnAddProductPage"/>-->
-      <!--          <include name="validateAddProductFormGetsFillUpCorrectly"/>-->
+            <class name="main.java.testcases.ProductPageTest">
+              <methods>
+                <include name="validateProductPageLoadSuccessfully"/>
+                <include name="validateTableMessage"/>
+                <include name="validateShowTableButtonFunctionality"/>
+                <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>
+                <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>
+                <include name="validateContextMenuButtonWorkingForTableRows"/>
+                <include name="validateAllTableColumnsAreVisible"/>
+                <include name="validateAddProductButtonFunctionality"/>
+                <include name="validateCancelButtonFunctionalityOnAddProductPage"/>
+                <include name="validateAddProductFormGetsFillUpCorrectly"/>
 
-      <!--        </methods>-->
-      <!--      </class>-->
+              </methods>
+            </class>
 
-      <!--      <class name="main.java.testcases.SkillPageTest">-->
-      <!--        <methods>-->
-      <!--          <include name="validateSkillPageLoadSuccessfully"/>-->
-      <!--          <include name="validateTableMessage"/>-->
-      <!--          <include name="validateShowTableButtonFunctionality"/>-->
-      <!--          <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>-->
-      <!--          <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>-->
-      <!--          <include name="validateContextMenuButtonWorkingForTableRows"/>-->
-      <!--          <include name="validateAllTableColumnsAreVisible"/>-->
-      <!--          <include name="validateAddSkillButtonFunctionality"/>-->
-      <!--          <include name="validateCancelButtonFunctionalityOnAddSkillPage"/>-->
-      <!--          <include name="validateAddSkillFormGetsFillUpCorrectly"/>-->
+            <class name="main.java.testcases.SkillPageTest">
+              <methods>
+                <include name="validateSkillPageLoadSuccessfully"/>
+                <include name="validateTableMessage"/>
+                <include name="validateShowTableButtonFunctionality"/>
+                <include name="validateShowTableButtonHidesTheTableOnSecondClick"/>
+                <include name="validateSearchInputFieldShowingOnShowTableButtonClick"/>
+                <include name="validateContextMenuButtonWorkingForTableRows"/>
+                <include name="validateAllTableColumnsAreVisible"/>
+                <include name="validateAddSkillButtonFunctionality"/>
+                <include name="validateCancelButtonFunctionalityOnAddSkillPage"/>
+                <include name="validateAddSkillFormGetsFillUpCorrectly"/>
 
-      <!--        </methods>-->
-      <!--      </class>-->
+              </methods>
+            </class>
 
-<!--      <class name="main.java.testcases.ProfilePageTest">-->
-<!--        <methods>-->
-<!--          <include name="testProfilePageLoaded"/>-->
-<!--          <include name="validateProfilePageHeader"/>-->
-<!--          <include name="validateProfilePictureHeader"/>-->
-<!--          <include name="validateNameFields"/>-->
-<!--          <include name="validateTitleField"/>-->
-<!--          <include name="validateEmailField"/>-->
-<!--        </methods>-->
-<!--      </class>-->
+      <class name="main.java.testcases.ProfilePageTest">
+        <methods>
+          <include name="testProfilePageLoaded"/>
+          <include name="validateProfilePageHeader"/>
+          <include name="validateProfilePictureHeader"/>
+          <include name="validateNameFields"/>
+          <include name="validateTitleField"/>
+          <include name="validateEmailField"/>
+        </methods>
+      </class>
 
 
 <!--          <class name="main.java.testcases.CookiesTest"/>-->
